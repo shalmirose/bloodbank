@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  </head>
+  <body>
+  {% include "blood/navbar.html" %}
+  <div class="page-wrapper">
+            <br><br><br>
+                    <h2 class="title">Admin Login</h2>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="name">Username</div>
+                            <div class="value">
+                                <div class="input-group">
+
+                                </div>
+                            </div>
+                        <div class="name">Password</div>
+                        <div class="value">
+                                <div class="input-group">
+                                </div>
+                        </div>
+                        <div>
+                            <button class="btn btn--radius-2 btn-danger" type="submit">Login</button>
+                        </div>
+                    </form>
+  </div>
+  </body>
+</html>
